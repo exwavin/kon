@@ -1,72 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KuyxBIII</title>
+    <title>Linktree Modern</title>
     <style>
         body {
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            background: #f0f0f0;
             font-family: Arial, sans-serif;
         }
-        .link-container {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            width: 300px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        .link-container h1 {
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
             text-align: center;
-            margin-bottom: 20px;
+            padding-top: 50px;
         }
-        .link {
-            display: flex;
-            align-items: center;
-            background-color: #007BFF;
+        .button {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #007BFF;
             color: #fff;
-            text-decoration: none;
-            padding: 10px;
+            border: none;
             border-radius: 5px;
-            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
-        .link svg {
-            margin-right: 5px;
+        .button:hover {
+            background: #0056b3;
+        }
+        .icon {
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="link-container">
-        <h1>KuyxBIII</h1>
-        <a href="#" class="link">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:20px;height:20px;">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-            Link 1
+    <div class="container">
+        <h1>Linktree Modern</h1>
+        <a href="#" class="button">
+            <span class="icon">🌐</span> Link 1
         </a>
-        <a href="https://www.instagram.com/kuyxbiii" class="link">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:20px;height:20px;">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2H5zm12 2a2 2 0 11-4 0 2 2 0 014 0zm-6 8a4 4 0 11-8 0 4 4 0 018 0z"></path>
-            </svg>
-            Instagram
+        <a href="#" class="button">
+            <span class="icon">💻</span> Link 2
         </a>
-        <a href="https://www.youtube.com/channel/@kuyxbiii" class="link">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:20px;height:20px;">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A26.27 26.27 0 001 9.7v4.6a26.27 26.27 0 00.46 3.28 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 26.27 26.27 0 00.46-3.28V9.7a26.27 26.27 0 00-.46-3.28z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 15.02l5.75-3.26-5.75-3.26v6.52z"></path>
-            </svg>
-            YouTube
-        </a>
-        <a href="https://soundcloud.com/username_anda" class="link">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:20px;height:20px;">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v20m-6-6h6m6 0h6m-6-6h6m-6-6h6"></path>
-            </svg>
-            SoundCloud
-        </a>
-        <!-- Tambahkan link lainnya di sini -->
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
 </body>
 </html>
