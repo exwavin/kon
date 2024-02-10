@@ -36,6 +36,21 @@
         i {
             margin-right: 5px;
         }
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 10px 0;
+        }
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -45,6 +60,14 @@
         <a href="https://instagram.com/kuyxbiii"><i class="fab fa-instagram"></i> Instagram</a>
         <a href="https://youtube.com/@kuyxbiii"><i class="fab fa-youtube"></i> YouTube</a>
         <!-- Tambahkan lebih banyak tautan di sini -->
+    </div>
+    <div class="embed-container">
+        <!-- Ganti 'YOUR_SOUNDCLOUD_URL' dengan URL lagu SoundCloud Anda -->
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1547777401&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    </div>
+    <div class="embed-container">
+        <!-- Ganti 'YOUR_YOUTUBE_VIDEO_ID' dengan ID video YouTube Anda -->
+        <iframe src="https://www.youtube.com/embed/bJZ4-j1HL9I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
 </html>
