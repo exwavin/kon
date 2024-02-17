@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Linktree Sosial Media</title>
-    <style id="themeStyle">
+    <title>My Linktree</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            transition: background 0.5s ease;
+        }
+        a {
+            color: var(--fg);
+        }
     </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const hour = new Date().getHours();
+            const isDayTime = hour > 6 && hour < 20;
+            document.body.style.setProperty('--bg', isDayTime ? 'white' : 'black');
+            document.body.style.setProperty('--fg', isDayTime ? 'black' : 'white');
+        });
+    </script>
 </head>
 <body>
-    <div id="linktree">
-        <a href="https://www.facebook.com/username"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="https://www.twitter.com/username"><img src="twitter-icon.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com/username"><img src="instagram-icon.png" alt="Instagram"></a>
-        <!-- Tambahkan lebih banyak ikon dan tautan media sosial di sini -->
-    </div>
-
-    <script>
-        // Mengatur tema berdasarkan waktu
-        var hour = new Date().getHours();
-        var themeStyle = document.getElementById('themeStyle');
-        if (hour < 6 || hour >= 18) {
-            // Tema malam
-            themeStyle.innerHTML = 'body { background-color: black; color: white; }';
-        } else {
-            // Tema siang
-            themeStyle.innerHTML = 'body { background-color: white; color: black; }';
-        }
-    </script>
+    <h1>My Links</h1>
+    <a href="https://link1.com">Link 1</a>
+    <a href="https://link2.com">Link 2</a>
+    <!-- Tambahkan lebih banyak tautan di sini -->
 </body>
 </html>
