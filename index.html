@@ -1,132 +1,29 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Link Saya</title>
-    <style>
-        /* Ganti font sesuai selera Anda */
-        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-
-        /* Ganti warna sesuai selera Anda */
-        :root {
-            --bg-color: #f0f0f0;
-            --text-color: #333333;
-            --link-color: #007bff;
-            --link-hover-color: #0056b3;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 600px;
-            width: 90%;
-            margin: 20px auto;
-        }
-
-        .logo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .name {
-            font-size: 24px;
-            font-weight: 600;
-            color: var(--text-color);
-            margin: 10px 0;
-        }
-
-        .bio {
-            font-size: 18px;
-            font-weight: 400;
-            color: var(--text-color);
-            margin: 10px 0;
-            text-align: center;
-        }
-
-        .links {
-            list-style: none;
-        }
-
-        .link {
-            display: block;
-            background-color: var(--link-color);
-            color: white;
-            text-decoration: none;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            font-size: 20px;
-            font-weight: 500;
-            text-align: center;
-        }
-
-        .link:hover {
-            background-color: var(--link-hover-color);
-        }
-
-        .icons {
-            display: flex;
-            justify-content: center;
-            margin: 10px 0;
-        }
-
-        .icon {
-            width: 40px;
-            height: 40px;
-            margin: 0 5px;
-        }
-
-        .soundcloud {
-            width: 100%;
-            height: 166px;
-            border: none;
-        }
+    <title>Linktree Sosial Media</title>
+    <style id="themeStyle">
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Ganti logo dengan gambar Anda sendiri -->
-        <img src="logo.png" alt="Logo" class="logo">
-        <!-- Ganti nama dengan nama Anda sendiri -->
-        <h1 class="name">Nama Saya</h1>
-        <!-- Ganti bio dengan deskripsi singkat tentang Anda -->
-        <p class="bio">Saya adalah seorang developer web yang suka membuat hal-hal keren dan berguna.</p>
-        <!-- Tambahkan atau hapus link sesuai kebutuhan Anda -->
-        <ul class="links">
-            <li><a href="https://github.com" class="link">GitHub</a></li>
-            <li><a href="https://twitter.com" class="link">Twitter</a></li>
-            <li><a href="https://instagram.com" class="link">Instagram</a></li>
-            <li><a href="https://linkedin.com" class="link">LinkedIn</a></li>
-            <li><a href="https://youtube.com" class="link">YouTube</a></li>
-        </ul>
-        <!-- Tambahkan atau hapus icon sesuai kebutuhan Anda -->
-        <div class="icons">
-            <!-- Ganti icon dengan icon SVG yang Anda inginkan -->
-            <img src="github.svg" alt="GitHub" class="icon">
-            <img src="twitter.svg" alt="Twitter" class="icon">
-            <img src="instagram.svg" alt="Instagram" class="icon">
-            <img src="linkedin.svg" alt="LinkedIn" class="icon">
-            <img src="youtube.svg" alt="YouTube" class="icon">
-        </div>
-        <!-- Ganti url dengan url track SoundCloud yang Anda inginkan -->
-        <!-- Untuk menghilangkan autoplay, hapus parameter auto_play=true -->
-        <iframe class="soundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <div id="linktree">
+        <a href="https://www.facebook.com/username"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com/username"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/username"><img src="instagram-icon.png" alt="Instagram"></a>
+        <!-- Tambahkan lebih banyak ikon dan tautan media sosial di sini -->
     </div>
+
+    <script>
+        // Mengatur tema berdasarkan waktu
+        var hour = new Date().getHours();
+        var themeStyle = document.getElementById('themeStyle');
+        if (hour < 6 || hour >= 18) {
+            // Tema malam
+            themeStyle.innerHTML = 'body { background-color: black; color: white; }';
+        } else {
+            // Tema siang
+            themeStyle.innerHTML = 'body { background-color: white; color: black; }';
+        }
+    </script>
 </body>
 </html>
