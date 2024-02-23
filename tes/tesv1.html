@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adaptive Background</title>
+    <style>
+        body {
+            transition: background-color 1s ease;
+        }
+
+        .night {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .day {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>Welcome to My Website</h1>
+    <p>This is an example of an adaptive background.</p>
+
+    <script>
+        var body = document.getElementById('body');
+
+        function checkTime() {
+            var date = new Date();
+            var hour = date.getHours();
+
+            if (hour < 6 || hour > 18) {
+                body.className = 'night';
+            } else {
+                body.className = 'day';
+            }
+        }
+
+        setInterval(checkTime, 1000);
+    </script>
+</body>
+</html>
