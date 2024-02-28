@@ -2,7 +2,7 @@
 
 <html lang="id">
     <head>
-        <title>KuyxBIII</title>
+        <title>KuyxBIII.></title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <meta name="color-scheme" content="light only"/>
@@ -234,6 +234,8 @@
                 --background-color: #FFFFFF;  
                 --text-color: #ff043c;
                 --border-color: #ff043c;
+                --border-size: 2px;
+                --type-color: solid;
             }
 
             [data-theme="dark"] {
@@ -255,10 +257,10 @@
                 color: var(--text-color);
                 box-shadow: 0rem 1.75rem 4rem 0rem rgba(0, 0, 0, 0.692);
                 border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
-                border-top: solid 3px var(--border-color);
-                border-right: solid 3px var(--border-color);
-                border-bottom: solid 3px var(--border-color);
-                border-left: solid 3px var(--border-color);
+                border-top: var(--type-color) var(--border-size) var(--border-color);
+                border-right: var(--type-color) var(--border-size) var(--border-color);
+                border-bottom: var(--type-color) var(--border-size) var(--border-color);
+                border-left: var(--type-color) var(--border-size) var(--border-color);
                 transition: opacity 0.940s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
@@ -861,42 +863,78 @@
             :root {
                 --warna-icon:#FFFFFF;
                 --warna-text:#FFFFFF; 
-                --border-radius: 120px;
                 --border-warna: #ffffff;
                 --color-button: linear-gradient(to right,#ff043c,#ff043c);
                 --warna-ig: linear-gradient(to right,#FEDA77,#E1306C,#E1306C,#DD2A7B,#8134AF,#515BD4);
                 --warna-twitter: linear-gradient(to right,#020101,#242424,#5a5a5a);
                 --warna-youtube: linear-gradient(to right,#ff043c,#b60303,#c40000);
-                --warna-soundcloud: linear-gradient(to right,#ff7a22,#ff7a22,#d86902);
+                --warna-soundcloud: linear-gradient(to right,#ff7a22,#ff7a22,#e06e02);
+                ---nogradient-warna-soundcloud: #ff7a22;
+                ---nogradient-warna-youtube: #b60303;
+                ---nogradient-warna-twitter: #a1a1a15e;
+                ---nogradient-warna-ig: #DD2A7B;
+                ---border-radius: 120px;
+                ---border-color: #ff043c;
+                ---border-radius-tl: 120px;   
+                ---border-radius-tr: 120px;  
+                ---border-radius-br: 120px; 
+                ---border-radius-bl: 120px;
+                --size-dan-tipe:solid 0px;
             }
             [data-theme="dark"] {
                 --warna-icon:#ff043c;
                 --warna-text:#242424;
                 --color-button: linear-gradient(to right,#ffffff,#ffffff); 
-                --warna-ig: linear-gradient(to right,#F58529,#FEDA77,#DD2A7B,#8134AF,#515cd45e);
-                --warna-twitter: linear-gradient(to right,#ffffff,#696969,#a1a1a15e);
-                --warna-youtube: linear-gradient(to right,#ff456d,#b60303,#c400005e);
-                --warna-soundcloud: linear-gradient(to right,#ff7a22,#ff7a22,#d869025e);
+                --warna-ig: linear-gradient(to right,#ffffff,#ffffff); /*ig,#F58529,#FEDA77,#DD2A7B,#8134AF,#515cd45e**/
+                --warna-twitter: linear-gradient(to right,#ffffff,#ffffff); /*X,#696969,#a1a1a15e*/
+                --warna-youtube: linear-gradient(to right,#ffffff,#ffffff);/*yt,#ff456d,#b60303,#c400005e*/
+                --warna-soundcloud: linear-gradient(to right,#ffffff,#ffffff); /*sc,#ff7a22,#ff7a22*/
+                ---nogradient-warna-soundcloud: #ff7a22;
+                ---nogradient-warna-youtube: #b60303;
+                ---nogradient-warna-twitter: #00000096;
+                ---nogradient-warna-ig: #DD2A7B;
+                ---border-radius-tl: 120px;   
+                ---border-radius-tr: 120px;  
+                ---border-radius-br: 120px; 
+                ---border-radius-bl: 120px;
+                --size-dan-tipe:solid 3px;
+
             }
 
             #buttons01 .n01 {
                 background: var(--color-button);
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                transition: opacity 0.200s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n01:hover {
                 background: var(--warna-soundcloud) !important;
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                background: var(--color-button);
+                border-radius: var(---border-radius-tl) var(---border-radius-tr) var(---border-radius-br) var(---border-radius-bl);
+                border-top: var(--size-dan-tipe) var(---nogradient-warna-soundcloud);
+                border-right: var(--size-dan-tipe) var(---nogradient-warna-soundcloud);
+                border-bottom: var(--size-dan-tipe) var(---nogradient-warna-soundcloud);
+                border-left: var(--size-dan-tipe) var(---nogradient-warna-soundcloud);
+                transition: opacity 0.124s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n02 {
                 background: var(--color-button);
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                transition: opacity 0.200s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n02:hover {
                 background: var(--warna-ig) !important;
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                background: var(--color-button);
+                border-radius: var(---border-radius-tl) var(---border-radius-tr) var(---border-radius-br) var(---border-radius-bl);
+                border-top: var(--size-dan-tipe) var(---nogradient-warna-ig);
+                border-right: var(--size-dan-tipe) var(---nogradient-warna-ig);
+                border-bottom: var(--size-dan-tipe) var(---nogradient-warna-ig);
+                border-left: var(--size-dan-tipe) var(---nogradient-warna-ig);
+                transition: opacity 0.124s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n03 {
@@ -917,36 +955,54 @@
 
             #buttons01 .n06 {
                 background: var(--color-button);
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                transition: opacity 0.200s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n06:hover {
                 background: var(--warna-youtube) !important;
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                background: var(--color-button);
+                border-radius: var(---border-radius-tl) var(---border-radius-tr) var(---border-radius-br) var(---border-radius-bl);
+                border-top: var(--size-dan-tipe) var(---nogradient-warna-youtube);
+                border-right: var(--size-dan-tipe) var(---nogradient-warna-youtube);
+                border-bottom: var(--size-dan-tipe) var(---nogradient-warna-youtube);
+                border-left: var(--size-dan-tipe) var(---nogradient-warna-youtube);
+                transition: opacity 0.124s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n07 {
                 background: var(--color-button);
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                transition: opacity 0.200s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n07:hover {
                 background: var(--warna-twitter) !important;
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                background: var(--color-button);
+                border-radius: var(---border-radius-tl) var(---border-radius-tr) var(---border-radius-br) var(---border-radius-bl);
+                border-top: var(--size-dan-tipe) var(---nogradient-warna-twitter);
+                border-right: var(--size-dan-tipe) var(---nogradient-warna-twitter);
+                border-bottom: var(--size-dan-tipe) var(---nogradient-warna-twitter);
+                border-left: var(--size-dan-tipe) var(---nogradient-warna-twitter);
+                transition: opacity 0.124s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n08 {
                 background: var(--color-button);
-                border-radius: var(--border-radius);
+                border-radius: var(---border-radius);
+                transition: opacity 0.200s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n08:hover {
-                background: linear-gradient(to right,#00e8ed,#00c9cc) !important;
-                border-radius: var(--border-radius);
+                background: var(--color-button) !important;
+                border-radius: var(---border-radius);
+                transition: opacity 0.124s ease 0.125s,transform 0.625s ease 0.125s;
             }
 
             #buttons01 .n09 {
-                background-color: #ff0040;
+                background:var(--color-button);
             }
 
             .links {
@@ -1332,39 +1388,6 @@
                     filter: none !important;
                 }
 
-             /* Credits */
-                #credit-footer-old a{
-                    text-decoration:underline;
-                    color:#fff
-                }
-                #credit-footer-new {
-                color: #242424;
-                font-family: 'Sora', sans-serif;
-                letter-spacing: 0px;
-                width: calc(100% + 0.275rem);
-                font-size: 14px;
-                line-height: 1.375;
-                font-weight: 200;  
-                }
-                #credit-footer-new a {
-                text-decoration: underline;
-                }           
-                #credit-footer-new a:hover {
-                text-decoration: none;
-                }
-                #credit-footer-new span.p:nth-child(n + 2) {
-                margin-top: 1rem;
-                }
-
-        /*footer*/
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: var(--background-color);
-            text-align: center;
-        }
             </style>
         </noscript>
     </head>
@@ -1431,7 +1454,7 @@
                                         <img src="gambar/v2XV3.png" alt="logo"/>
                                     </span>
                                 </div>
-                                <h1 id="text03">KuyxBIII.</h1>
+                                <h1 id="text03">KuyxBIII.></h1>
                             </div>             
                         </div>
                     </div>
